@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!--Michael Gay---->
+<html lang="en">
+    <head>
+        <title>Login Check</title>
+        <script src="LoginCheck.js"></script>
+        <style>
+            body {background-color: cornflowerblue;}
+            body {background-image: linear-gradient(90deg, green 0%, cornflowerblue 100%);}
+        </style>
+    </head>
+    <!--The document write tags welcome the user and-->
+    <!--tells them to enter in their name and ID Badge number-->
+    <body>
+        <script>
+            document.write("Welcome to the login screen.")
+            document.write("</br>")
+            document.write("Please enter in your first and last name along with your badge number.")
+        </script>
+        <br>
+        <!--The text below tells the user their current login status-->
+        <p id="LoginShowcase" class="texty">Please enter your information below...</p>
+        <br>
+        <!--User input their login information below-->
+        <form id="LoginCheck" onsubmit="return false">
+            First name: <input type="text" id="UserFname"><br>
+            Last name: <input type="text" id="UserLname"><br>
+            Badge number: <input type="number" id="UserBadge"><br><br>
+            <input type="submit" onclick="checkUser();">
+        </form>
+        <!--Button call on the both the car exhaust and space background-->
+        <!-- sound from the Javascript File-->
+        <button onclick="revvingCar()">Car Engine Revving</button>
+        <button onclick="labBackground()">Spacebackground</button>
+    </body>
+</html>
